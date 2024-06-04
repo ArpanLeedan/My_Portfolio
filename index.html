@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arpan Basu's Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://img.freepik.com/free-photo/abstract-background-with-low-poly-design_1048-8478.jpg?t=st=1717478778~exp=1717482378~hmac=de8dde94ba4f40c6f782ebd3c0f2ecddf55fda974ea8b96bc3f3b54fd5fa6c4f&w=826');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: linear-gradient(45deg, #8368d4, #f9d423);
+            color: #fff;
+            padding: 3rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header p {
+            margin: 0.5rem 0;
+            font-size: 1.3rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header a {
+            color: #0703fc;
+            text-decoration: none;
+        }
+
+        .container {
+            margin: 2rem 1rem;
+        }
+
+        .block {
+            background: rgba(255, 255, 255, 0.8); /* Background color with transparency */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin: 1rem 0;
+            padding: 2rem;
+            transition: transform 0.3s ease;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        .block:nth-child(even) {
+            animation-delay: 0.5s;
+        }
+
+        .block:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #ff6f61; /* Vibrant red background */
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border-left: 4px solid #333;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+            margin-top: 2rem;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        #back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 2rem;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        #back-to-top:hover {
+            background: #555;
+        }
+
+        .horizontal-block {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .horizontal-block .block {
+            flex: 1 1 calc(33.333% - 1rem);
+            min-width: 300px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Arpan Basu</h1>
+    <p>Kolkata, West Bengal • <a href="mailto:arpan15.basu@gmail.com">arpan15.basu@gmail.com</a> • 8584088129 • <a href="https://www.linkedin.com/in/arpan-basu-1a6992229">LinkedIn</a> • <a href="https://github.com/ArpanLeedan">Github</a><br>An honors student with a record of academic success. Fast and diligent learner. Adept at working across departments, with faculty, administrators, and students. Team player.</p>
+</header>
+
+<div class="container">
+    <div class="block" id="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>Institute of Engineering & Management, Kolkata, West Bengal</strong> - Bachelor of Technology | 2021-2025</li>
+            <li><strong>Delhi Public School, Ruby Park, Kolkata, West Bengal</strong> - CBSE Class XII | 2019-2021</li>
+            <li><strong>Ram Mohan Mission High School, Kolkata, West Bengal</strong> - ICSE Class X | 2009-2019</li>
+        </ul>
+    </div>
+    <div class="block" id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Python Basics for Data Science (edX-IBM verified)</li>
+            <li>Intro to Machine Learning (Kaggle)</li>
+            <li>Python Data Structures (Coursera-University of Michigan)</li>
+            <li>Disaster Risk Monitoring Using Satellite Imagery (NVIDIA)</li>
+            <li>Data Analytics (IBM)</li>
+            <li>Cloud Training (Google)</li>
+            <li>Artificial Intelligence, Internet Of Things, Machine Learning & Data Analytics Fundamentals at National University Of Singapore (IEM America, Smart Society)</li>
+        </ul>
+    </div>
+    <div class="block" id="interests">
+        <h2>Interests</h2>
+        <ul>
+            <li>Photography</li>
+            <li>Music</li>
+            <li>Gaming</li>
+        </ul>
+    </div>
+    <div class="horizontal-block">
+        <div class="block" id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>MySQL</li>
+                <li>CSS</li>
+                <li>Data Structures</li>
+                <li>Data Analytics</li>
+                <li>Machine Learning</li>
+                <li>C</li>
+            </ul>
+        </div>
+        <div class="block" id="experience">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>CK Birla Hospitals, India, Kolkata, West Bengal</h3>
+                <p><strong>IT Intern</strong> | 01/2024-02/2024</p>
+                <ul>
+                    <li>Actively participated in the migration of our existing Hospital Information System (HIS).</li>
+                    <li>Report dashboard management page developed.</li>
+                    <li>Created the Emergency Doctor's Dashboard as a full stack developer.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Sudaku Codeclause Pvt. Ltd., Remote</h3>
+                <p><strong>Python Development Intern</strong> | 08/2023-09/2023</p>
+                <ul>
+                    <li>Worked on a project to make an URL-Shortener.</li>
+                    <li>Worked on a Voice Assistant Project.</li>
+                    <li>Worked to create a music player application.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="block" id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Temporal Dynamics of Arid Savannas and Mangroves</h3>
+                <ul>
+                    <li>A conference paper to display variation of different vegetation indices in various vegetation covers.</li>
+                    <li>Proved MVI and MFI’s superiority over NDVI in mangrove</li>
+                    <li>Created a system to generate and store electric bill.</li>
+                    <li>Displayed 3 months record.</li>
+                    <li>Enabled new customer addition/deletion.</li>
+                    <li>Implemented new appliance application.</li>
+                    <li>Tech Stack: python, mysql, mysqlconnector, flask, matplotlib.</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>Facial Mood Detection</h3>
+                <ul>
+                    <li>A deep learning system which learns about the mood of the person from the image of his/her face.</li>
+                    <li>Returns suitable playlist based on the mood via spotify automation.</li>
+                    <li>Tech Stack: python, keras, optimizer, regularizer, convolutional layer, numpy, pandas, pyautogui.</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>Emergency Doctor Dashboard</h3>
+                <ul>
+                    <li>A dashboard with which a user can login and create doctor entry list for ER for each day.</li>
+                    <li>Automatically updated at the display screen based on system date and time.</li>
+                    <li>Can create entries for new doctors as well as departments with admin access.</li>
+                    <li>Can create new users to access the page (with admin access) to create entries.</li>
+                    <li>Tech Stack: python, mysql, mysqlconnector, flask, HTML, CSS, Javascript, Jinja2, Selenium.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="horizontal-block">
+    <div class="block" id="subjects-languages">
+        <h2>Core-Subjects</h2>
+        <table>
+            <tr>
+                <th>Subjects</th>
+            </tr>
+            <tr>
+                <td>Database Management Systems,</td>
+            </tr>
+            <tr>
+                <td>Artificial Intelligence and Machine Learning,</td>
+            </tr>
+            <tr>
+                <td>Data Structures and Algorithms,</td>
+            </tr>
+            <tr>
+                <td>OOPS,</td>
+            </tr>
+            <tr>
+                <td>Operating Systems</td>
+            </tr>
+        </table>
+    </div>
+    <div class="block" id="languages">
+        <h2>Languages</h2>
+        <table>
+            <tr>
+                <th>Language</th>
+		<th></th>
+		<th></th>
+                <th>Proficiency</th>
+            </tr>
+            <tr>
+                <td>English</td>
+		<td></td>
+		<td></td>
+                <td>Native</td>
+            </tr>
+            <tr>
+                <td>Hindi</td>
+		<td></td>
+		<td></td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>Bengali</td>
+		<td></td>
+		<td></td>
+                <td>Native</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+    <div class="block" id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>NPTEL Discipline Star (01/2023 - 04/2023)</li>
+            <li>Grade of 89.5% in Google’s Crash course on Python</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Arpan Basu</p>
+</footer>
+<button id="back-to-top">&uarr;</button>
+<script>
+    // Back to top button functionality
+    window.addEventListener('scroll', () => {
+        const backToTopButton = document.getElementById('back-to-top');
+        if (window.scrollY > 300) {
+            backToTopButton.style.display = 'block';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    });
+
+    document.getElementById('back-to-top').addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+</body>
+</html>
